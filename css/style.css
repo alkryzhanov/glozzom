@@ -64,7 +64,7 @@
 
     color: #fff;
     background-image: url("../img/media.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: 0 -300px;
     background-size: cover;
@@ -72,4 +72,39 @@
 
 #video-play a {
     color: #fff;
+}
+
+#page-header {
+    height: 200px;
+    padding-top: 50px;
+
+    color: #fff;
+    border-bottom: 1px solid #eee;
+    background-image: url("../img/image1.jpg");
+    background-attachment: fixed;
+    background-position: 0 -360px;
+}
+
+.about-img {
+    margin-top: -50px;
+}
+
+#faq .card {
+    border: #444;
+}
+
+#faq a {
+    text-decoration: none;
+
+    color: #fff;
+}
+
+#faq .card-body,
+#faq .card-header {
+    background-color: #333;
+}
+
+#main-footer {
+    color: #fff;
+    background-color: #000;
 }

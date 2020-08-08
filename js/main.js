@@ -28,23 +28,9 @@ $(document).on('click', '[data-toggle="lightbox"]', function (event) {
     $(this).ekkoLightbox();
 });
 
-// Init Scrollspy
-$('body').scrollspy({
-    target: '#main-nav'
-});
-
-// Smooth Scrolling
-$("#main-nav a").on('click', function (event) {
-    if (this.hash !== "") {
-        event.preventDefault();
-
-        const hash = this.hash;
-
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 800, function () {
-
-            window.location.hash = hash;
-        });
-    }
+//Slider control
+$('.slider').slick({
+    infinite: true,
+    slideToShow: 1,
+    slideToScroll: 1
 });
